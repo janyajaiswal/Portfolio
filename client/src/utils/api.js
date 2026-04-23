@@ -1,6 +1,4 @@
-const BASE = import.meta.env.DEV
-  ? '/api'
-  : 'https://janya-jaiswal-portfolio.onrender.com/api';
+const BASE = '/api';
 
 export async function sendContactMessage(data) {
   const res = await fetch(`${BASE}/contact`, {

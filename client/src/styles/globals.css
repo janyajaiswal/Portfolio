@@ -1,0 +1,370 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Google Fonts ─── */
+/* Loaded in index.html */
+
+/* ─── CSS Custom Properties ─── */
+:root {
+  --teal-primary: #4361ee;
+  --teal-deep: #3451b2;
+  --teal-light: #c7d2fe;
+  --purple-soft: #c084fc;
+  --purple-muted: #a78bfa;
+
+  --bg: #fafafa;
+  --bg-secondary: #f0f4f8;
+  --bg-section-alt: rgba(235, 239, 248, 0.55);
+  --surface: #ffffff;
+  --surface-hover: #f5f5f5;
+  --border: #e2e8f0;
+
+  --text-primary: #1c1c1e;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+html.dark {
+  --bg: #0f1117;
+  --bg-secondary: #13161f;
+  --bg-section-alt: rgba(19, 22, 31, 0.6);
+  --surface: #1c2033;
+  --surface-hover: #232740;
+  --border: #323650;
+
+  /* Brighter accent colors in dark mode */
+  --teal-primary: #6b8eff;
+  --teal-deep: #5578f0;
+  --teal-light: #d6deff;
+  --purple-soft: #d09eff;
+  --purple-muted: #bb87ff;
+
+  /* Brighter, more readable text */
+  --text-primary: #f0f0fa;
+  --text-secondary: #b8c4d8;
+  --text-muted: #6e7e9a;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── Base ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.7;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* ─── Typography ─── */
+.font-display {
+  font-family: "DM Serif Display", serif;
+}
+
+.font-mono-custom {
+  font-family: "Space Mono", monospace;
+}
+
+@font-face {
+  font-family: "Space-Theme";
+  src: url("/fonts/Bemora-R9w8v.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space-Theme-Alt1";
+  src: url("/fonts/SpaceMission-rgyw9.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space-Theme-Alt2";
+  src: url("/fonts/Chopsic-K6Dp.ttf") format("truetype");
+}
+
+/* ─── Selection ─── */
+::selection {
+  background: rgba(67, 97, 238, 0.25);
+  color: var(--text-primary);
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--teal-deep);
+  border-radius: 3px;
+}
+
+/* ─── Section Layout ─── */
+.section {
+  padding: 6rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-label {
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal-primary);
+  margin-bottom: 0.5rem;
+}
+
+.section-heading {
+  font-family: "Space-Theme", serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+/* ─── Cards ─── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(67, 97, 238, 0.3);
+}
+
+/* ─── Teal Badge / Pill ─── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-family: "Space Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-teal {
+  background: rgba(67, 97, 238, 0.12);
+  color: var(--teal-primary);
+  border: 1px solid rgba(67, 97, 238, 0.25);
+}
+
+.badge-purple {
+  background: rgba(192, 132, 252, 0.12);
+  color: var(--purple-soft);
+  border: 1px solid rgba(192, 132, 252, 0.25);
+}
+
+.badge-gray {
+  background: rgba(148, 163, 184, 0.1);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+/* ─── Buttons ─── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: var(--teal-primary);
+  color: #0f1117;
+  border-radius: 8px;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  cursor: none;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--teal-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(67, 97, 238, 0.35);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: transparent;
+  color: var(--teal-primary);
+  border: 1.5px solid var(--teal-primary);
+  border-radius: 8px;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: none;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(67, 97, 238, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ─── Gradient Orb (ambient background) ─── */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb-teal {
+  background: radial-gradient(
+    circle,
+    rgba(67, 97, 238, 0.15) 0%,
+    transparent 70%
+  );
+}
+
+.orb-purple {
+  background: radial-gradient(
+    circle,
+    rgba(192, 132, 252, 0.12) 0%,
+    transparent 70%
+  );
+}
+
+/* ─── Divider ─── */
+.divider {
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal-primary), var(--purple-soft));
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+
+/* ─── Animations ─── */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(67, 97, 238, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(67, 97, 238, 0);
+  }
+}
+
+@keyframes statusBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-status-blink {
+  animation: statusBlink 1.5s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* ─── Skill Pill hover ─── */
+.skill-pill {
+  display: inline-flex;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-family: "Space Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.skill-pill:hover {
+  border-color: var(--teal-primary);
+  color: var(--teal-primary);
+  background: rgba(67, 97, 238, 0.06);
+  transform: translateY(-1px);
+}
+
+.skill-pill.purple:hover {
+  border-color: var(--purple-soft);
+  color: var(--purple-soft);
+  background: rgba(192, 132, 252, 0.06);
+}
+
+/* ─── Link reset ─── */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ─── Focus visible ─── */
+:focus-visible {
+  outline: 2px solid var(--teal-primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}

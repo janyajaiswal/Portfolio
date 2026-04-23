@@ -49,7 +49,7 @@ export default function Hero() {
       <div className="orb orb-purple" style={{ width: 500, height: 500, bottom: '0%', right: '-10%' }} />
 
       <div className="section-inner" style={{ width: '100%', position: 'relative', zIndex: 1 }}>
-        <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.1fr) minmax(0,0.9fr)', gap: '4rem', alignItems: 'center' }}>
+        <div className="hero-grid">
 
           {/* Left — Text */}
           <motion.div

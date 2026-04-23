@@ -61,12 +61,15 @@ html.dark {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  cursor: none !important;
 }
 
 html {
   scroll-behavior: smooth;
-  cursor: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  *, *::before, *::after { cursor: none !important; }
+  html { cursor: none; }
 }
 
 body {

@@ -55,6 +55,10 @@ export default function About() {
               Outside of my tech world, I've volunteered for the underprivileged,
               student outreach programs and have had the experience of working all-around jobs, from being a Cashier to a Martial Arts attendant.
             </p>
+            <br /><br />
+            <span className="fun-fact">
+              A fun fact: I was born with blue-grey eyes but they changed color to hazel.
+            </span>
           </motion.div>
 
           <motion.div

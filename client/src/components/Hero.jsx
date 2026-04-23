@@ -93,10 +93,6 @@ export default function Hero() {
             - Between a complex data pipeline and a stakeholder who needs to know the numbers, through dashboards.
             <br />
             - Between an idea on a whiteboard and a system that ships, through scalable and reliable software implementation.
-            <br /><br />
-            <span className="fun-fact">
-              A fun fact: I was born with blue-grey eyes but they changed color to hazel.
-            </span>
             </p>
 
             <div className="hero-chips">

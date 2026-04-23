@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, MapPin, Sparkles } from 'lucide-react';
 
@@ -15,6 +15,13 @@ const STAT_CHIPS = [
 function Photo() {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    if (imgRef.current?.complete && !imgRef.current.naturalWidth === false) {
+      setLoaded(true);
+    }
+  }, []);
 
   if (error) {
     return (
@@ -31,6 +38,7 @@ function Photo() {
   return (
     <div className="photo-carousel">
       <img
+        ref={imgRef}
         src={PHOTO}
         alt="Janya Jaiswal"
         className="photo-carousel-img"

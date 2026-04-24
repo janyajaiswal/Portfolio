@@ -261,13 +261,13 @@ html.dark .nav-header.scrolled {
 }
 .scroll-indicator {
   position: absolute;
-  bottom: -3rem;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.4rem;
   color: var(--text-muted);
 }
 .scroll-indicator-label {

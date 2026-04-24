@@ -68,7 +68,12 @@ function ScrollIndicator() {
       style={{ pointerEvents: 'none' }}
     >
       <span className="scroll-indicator-label">scroll</span>
-      <ChevronDown size={16} className="scroll-arrow" />
+      <motion.div
+        animate={{ y: [0, 7, 0], opacity: [1, 0.4, 1] }}
+        transition={{ duration: 1.2, ease: 'easeInOut', repeat: Infinity }}
+      >
+        <ChevronDown size={16} />
+      </motion.div>
     </motion.div>
   );
 }

@@ -84,6 +84,8 @@ export default function Hero() {
       <div className="orb orb-teal" style={{ width: 600, height: 600, top: '-10%', left: '-15%' }} />
       <div className="orb orb-purple" style={{ width: 500, height: 500, bottom: '0%', right: '-10%' }} />
 
+      <ScrollIndicator />
+
       <div className="section-inner" style={{ width: '100%', position: 'relative', zIndex: 1 }}>
         <div className="hero-grid">
 
@@ -163,7 +165,6 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        <ScrollIndicator />
       </div>
 
     </section>

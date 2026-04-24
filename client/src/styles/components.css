@@ -276,6 +276,9 @@ html.dark .nav-header.scrolled {
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
+.scroll-arrow {
+  animation: arrowBounce 1.2s ease-in-out infinite;
+}
 
 /* ════════════════════════════════════════════
    ABOUT

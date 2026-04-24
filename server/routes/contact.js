@@ -1,8 +1,11 @@
 const express = require('express');
 const { body } = require('express-validator');
 const rateLimit = require('express-rate-limit');
+const { Resend } = require('resend');
 const validate = require('../middleware/validate');
 const Message = require('../models/Message');
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const router = express.Router();
 
@@ -33,6 +36,19 @@ router.post('/', contactLimiter, contactValidation, validate, async (req, res) =
   try {
     const { name, email, message } = req.body;
     const newMessage = await Message.create({ name, email, message });
+
+    await resend.emails.send({
+      from: 'Portfolio Contact <onboarding@resend.dev>',
+      to: 'jaiswaljanya@gmail.com',
+      subject: `New message from ${name}`,
+      html: `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+        <p><strong>Message:</strong></p>
+        <p>${message.replace(/\n/g, '<br>')}</p>
+      `,
+    });
+
     res.status(201).json({ success: true, id: newMessage._id });
   } catch (err) {
     console.error('Contact save error:', err);

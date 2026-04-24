@@ -303,6 +303,11 @@ body {
   }
 }
 
+@keyframes arrowBounce {
+  0%, 100% { transform: translateY(0);   opacity: 1; }
+  50%       { transform: translateY(7px); opacity: 0.4; }
+}
+
 @keyframes pulseGlow {
   0%,
   100% {

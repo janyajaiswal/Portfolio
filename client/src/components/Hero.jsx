@@ -50,6 +50,29 @@ function Photo() {
   );
 }
 
+function ScrollIndicator() {
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handler = () => { if (window.scrollY > 40) setVisible(false); };
+    window.addEventListener('scroll', handler, { passive: true });
+    return () => window.removeEventListener('scroll', handler);
+  }, []);
+
+  return (
+    <motion.div
+      className="scroll-indicator"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: visible ? 1 : 0 }}
+      transition={{ opacity: { delay: visible ? 1.2 : 0, duration: visible ? 0.6 : 0.4 } }}
+      style={{ pointerEvents: 'none' }}
+    >
+      <span className="scroll-indicator-label">scroll</span>
+      <ChevronDown size={16} className="scroll-arrow" />
+    </motion.div>
+  );
+}
+
 export default function Hero() {
   return (
     <section id="hero" className="hero-section">
@@ -135,15 +158,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        <motion.div
-          className="scroll-indicator"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.6 }}
-        >
-          <span className="scroll-indicator-label">scroll</span>
-          <ChevronDown size={16} style={{ animation: 'fadeSlideUp 1.4s ease-in-out infinite alternate' }} />
-        </motion.div>
+        <ScrollIndicator />
       </div>
 
     </section>

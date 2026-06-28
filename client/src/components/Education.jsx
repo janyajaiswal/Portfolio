@@ -6,8 +6,8 @@ const EDUCATION = [
     degree: 'M.S. Computer Science',
     school: 'California State University, Fullerton',
     abbr: 'CSUF',
-    dates: 'Aug 2024 – Present',
-    gpa: '3.93 / 4.0',
+    dates: 'Aug 2024 – May 2026',
+    gpa: '3.94 / 4.0',
     color: 'teal',
     coursework: [
       'Advanced Database Management', 'Web Backend Engineering', 'Agile Software Processes',

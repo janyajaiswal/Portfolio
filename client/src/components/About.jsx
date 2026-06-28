@@ -7,12 +7,9 @@ const TRAITS = [
 ];
 
 const CURRENTLY = [
-  { icon: '🛰️', text: 'Upcoming Intern @ NASA' },
-  { icon: '🎓', text: 'MS CS @ CSUF' },
-  { icon: '☁️', text: 'Intern @ CypherShield' },
-  { icon: '📚', text: 'Success Ambassador @ GEAR UP' },
-  { icon: '📖', text: 'C++ Instructor @ CSUF' },
-  { icon: '📍', text: 'Fullerton, Orange County, CA' },
+  { icon: '🛰️', text: 'Data Analytics Intern @ NASA' },
+  { icon: '🎓', text: 'Recent Graduate MS CS @ CSUF \'26' },
+  { icon: '📍', text: 'Lancaster, LA County, CA' },
 ];
 
 export default function About() {
@@ -41,8 +38,8 @@ export default function About() {
             transition={{ duration: 0.65, delay: 0.1, ease: 'easeOut' }}
           >
             <p className="about-body">
-              I'm a graduate student in Computer Science at{' '}
-              <span className="about-highlight">Cal State Fullerton with a 3.93 GPA</span>. I completed my Bachelor's in Computer Science &amp; Engineering at VIT-AP, India in 2024. My experiences gave
+              I recently graduated with a Master's in Computer Science from{' '}
+              <span className="about-highlight">Cal State Fullerton with a 3.94 GPA</span>. I completed my Bachelor's in Computer Science &amp; Engineering at VIT-AP, India in 2024. My experiences gave
               me a global foundation on how systems are built, why they fail, and how design decisions can be improved.
             </p>
             <p className="about-body">

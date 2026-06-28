@@ -6,10 +6,13 @@ const EXPERIENCES = [
   {
     role: 'Data Analytics Intern',
     company: 'NASA Armstrong Flight Research Center',
-    dates: 'Jun 2026 – Aug 2026',
-    type: 'Upcoming Internship',
+    dates: 'Jun 2026 – Present',
+    type: 'Internship',
     tags: ['Power BI', 'MS Project', 'SharePoint', 'Python', 'AI Summarization', 'Data Analytics'],
     bullets: [
+      'Partnering with the Flight Demonstrations project manager to define data requirements across flight research datasets and operational pipelines; translating stakeholder needs into structured data models that surface KPI-driven insights for mission planning.',
+      'Building Power BI dashboards that track aircraft budgets, schedules, and milestone progress for active programs including the X-59 and F-18 — integrating data from Excel, internal systems, and SharePoint via Power Query ETL pipelines for automated cleaning and transformation.',
+      'Applying AI-driven summarization techniques to condense large volumes of project documentation and meeting notes into actionable briefs, enabling faster data-driven decision-making across cross-functional flight research teams.',
     ],
   },
   {
@@ -62,7 +65,7 @@ const EXPERIENCES = [
     ],
   },
   {
-    role: 'Research Assistant',
+    role: 'Data Engineering Research Assistant',
     company: 'CSUF Auxiliary Services Corp',
     dates: 'Apr 2025 – Oct 2025',
     type: 'Research',

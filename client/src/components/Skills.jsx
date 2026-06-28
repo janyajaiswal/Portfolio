@@ -78,7 +78,7 @@ const SKILL_GROUPS = [
   { label: 'ML & AI',          color: 'purple', skills: ['TensorFlow', 'Keras', 'scikit-learn', 'PyTorch', 'OpenAI API', 'Pandas', 'NumPy', 'YOLO', 'CNN', 'NER', 'LLM Prompt Engineering'] },
   { label: 'Full-Stack',       color: 'teal',   skills: ['React', 'Node.js', 'Express', 'MongoDB', 'Redux', 'REST APIs', 'Flask', 'HTML5', 'CSS3', 'JWT', 'Multer / GridFS'] },
   { label: 'Cloud & DevOps',   color: 'purple', skills: ['GCP', 'AWS (IAM, EC2, S3)', 'Microsoft Entra ID', 'OAuth 2.0', 'Microsoft Graph API', 'Docker', 'CI/CD', 'Linux', 'Git'] },
-  { label: 'Data & Analytics', color: 'teal',   skills: ['Apache Spark', 'ETL Pipelines', 'Feature Engineering', 'Data Mining', 'Statistical Validation', 'Anomaly Detection', 'Tableau'] },
+  { label: 'Data & Analytics', color: 'teal',   skills: ['Apache Spark', 'ETL Pipelines', 'Power BI', 'Feature Engineering', 'Data Mining', 'Statistical Validation', 'Anomaly Detection', 'Tableau'] },
   { label: 'Databases',        color: 'purple', skills: ['Neo4j', 'MongoDB', 'MySQL', 'PostgreSQL', 'Graph Databases'] },
   { label: 'Testing & QA',     color: 'teal',   skills: ['Jest', 'Unit Testing', 'Integration Testing', 'E2E Testing', 'Data Validation', 'Defect Documentation'] },
   { label: 'Tools & Design',   color: 'purple', skills: ['Figma', 'Jira', 'Agile / Scrum', 'Postman', 'Google Apps Script', 'SharePoint', 'Canva'] },

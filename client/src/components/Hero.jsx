@@ -5,7 +5,7 @@ import { ChevronDown, MapPin, Sparkles } from 'lucide-react';
 const PHOTO = '/images/image1.jpeg';
 
 const STAT_CHIPS = [
-  { label: '3.93 GPA', sub: 'MS CS @ CSUF' },
+  { label: '3.94 GPA', sub: 'MS CS @ CSUF' },
   { label: 'Software', sub: 'Engineer' },
   { label: 'MERN', sub: 'Full-Stack' },
   { label: 'Data', sub: 'Analytics' },
@@ -103,7 +103,7 @@ export default function Hero() {
 
             <div className="hero-location">
               <MapPin size={12} />
-              Open to Relocation across US
+              Open to Relocation across USA
             </div>
 
             <div>
@@ -118,7 +118,7 @@ export default function Hero() {
 
             I've always loved building bridges:
             <br />
-            - Between the engineers and the non-technical staff. through translation of concepts.
+            - Between the engineers and the non-technical staff, through translation of concepts.
             <br />
             - Between a complex data pipeline and a stakeholder who needs to know the numbers, through dashboards.
             <br />

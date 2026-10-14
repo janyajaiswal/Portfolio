@@ -7,7 +7,7 @@ const TRAITS = [
 ];
 
 const CURRENTLY = [
-  { icon: '🛰️', text: 'Data Analytics Intern @ NASA' },
+  { icon: '🛰️', text: 'Test Information Engineer @ NASA' },
   { icon: '🎓', text: 'Recent Graduate MS CS @ CSUF \'26' },
   { icon: '📍', text: 'Lancaster, LA County, CA' },
 ];

@@ -10,9 +10,9 @@ const EXPERIENCES = [
     type: 'Full-time',
     tags: ['Python', 'IADS', 'FLIDAS', 'Telemetry', 'Flight Data Analysis', 'V&V', 'Mission Control', 'Automation', 'Linux', 'Data Analytics'],
     bullets: [
-      '•	Automate Dryden Aeronautic Test Range (DATR) mission documentation with Python scripts (mission reports, work orders, data processing and archival). Built a custom note-taking app with automatic per-mission folder creation, file sorting and collections, and improved the GPS data plotting.',
-      '•	Gather Mission Control Center (MCC) real-time display requirements and develop IADS configuration files for MCC builds. Execute formal V&V on every release using FLIDAS and Python, replaying a prior flight’s data at each step to verify flight-data accuracy and system reliability.',
-      '•	Staff the MCC during live missions, troubleshooting flight-system anomalies through real-time telemetry and coordinating with flight, software, and Range engineering teams. Document mission notes for post-flight review.']
+      'Automate Dryden Aeronautic Test Range (DATR) mission documentation with Python scripts (mission reports, work orders, data processing and archival). Built a custom note-taking app with automatic per-mission folder creation, file sorting and collections, and improved the GPS data plotting.',
+      'Gather Mission Control Center (MCC) real-time display requirements and develop IADS configuration files for MCC builds. Execute formal V&V on every release using FLIDAS and Python, replaying a prior flight’s data at each step to verify flight-data accuracy and system reliability.',
+      'Staff the MCC during live missions, troubleshooting flight-system anomalies through real-time telemetry and coordinating with flight, software, and Range engineering teams. Document mission notes for post-flight review.']
   },
   {
     role: 'Data Analytics Intern',
@@ -79,7 +79,7 @@ const EXPERIENCES = [
     role: 'Data Engineering Research Assistant',
     company: 'CSUF Auxiliary Services Corp',
     dates: 'Apr 2025 – Oct 2025',
-    type: 'Research',
+    type: 'Part-time',
     tags: ['Python', 'Pandas', 'ETL', 'Data Validation', 'SEC Filings'],
     bullets: [
       'Wrote Python (Pandas) scripts to scrape, merge, and reconcile CEO compensation data across 3,000+ records from SEC filings and public datasets.',

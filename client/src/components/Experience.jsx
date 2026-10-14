@@ -4,9 +4,20 @@ import { ChevronDown } from 'lucide-react';
 
 const EXPERIENCES = [
   {
+    role: 'Test Information Engineer',
+    company: 'NASA Armstrong Flight Research Center',
+    dates: 'Sept 2026 – Present',
+    type: 'Full-time',
+    tags: ['Python', 'IADS', 'FLIDAS', 'Telemetry', 'Flight Data Analysis', 'V&V', 'Mission Control', 'Automation', 'Linux', 'Data Analytics'],
+    bullets: [
+      '•	Automate Dryden Aeronautic Test Range (DATR) mission documentation with Python scripts (mission reports, work orders, data processing and archival). Built a custom note-taking app with automatic per-mission folder creation, file sorting and collections, and improved the GPS data plotting.',
+      '•	Gather Mission Control Center (MCC) real-time display requirements and develop IADS configuration files for MCC builds. Execute formal V&V on every release using FLIDAS and Python, replaying a prior flight’s data at each step to verify flight-data accuracy and system reliability.',
+      '•	Staff the MCC during live missions, troubleshooting flight-system anomalies through real-time telemetry and coordinating with flight, software, and Range engineering teams. Document mission notes for post-flight review.']
+  },
+  {
     role: 'Data Analytics Intern',
     company: 'NASA Armstrong Flight Research Center',
-    dates: 'Jun 2026 – Present',
+    dates: 'Jun 2026 – Sept 2026',
     type: 'Internship',
     tags: ['Power BI', 'MS Project', 'SharePoint', 'Python', 'AI Summarization', 'Data Analytics'],
     bullets: [
@@ -18,7 +29,7 @@ const EXPERIENCES = [
   {
     role: 'IT / GCP Engineer Intern',
     company: 'CypherShield',
-    dates: 'Jan 2026 – Present',
+    dates: 'Jan 2026 – April 2026',
     type: 'Internship',
     tags: ['GCP', 'OAuth 2.0', 'Microsoft Graph API', 'M365', 'Azure AD'],
     bullets: [
@@ -30,7 +41,7 @@ const EXPERIENCES = [
   {
     role: 'Program Operations Associate',
     company: 'GEAR UP CSUF',
-    dates: 'Sep 2025 – Present',
+    dates: 'Sep 2025 – May 2026',
     type: 'Part-time',
     tags: ['Google Apps Script', 'Excel', 'Data Automation', 'Operations'],
     bullets: [
@@ -43,7 +54,7 @@ const EXPERIENCES = [
   {
     role: 'Instructional Lab Assistant',
     company: 'California State University, Fullerton',
-    dates: 'Sep 2025 – Present',
+    dates: 'Sep 2025 – May 2026',
     type: 'Part-time',
     tags: ['C++', 'OOP', 'Algorithms', 'Debugging', 'Git'],
     bullets: [
